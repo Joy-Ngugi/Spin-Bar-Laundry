@@ -6,123 +6,119 @@
   <title>Laundry & Dry Cleaning Services</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-<div class="bg-white ">    
-  <!-- Navbar -->
-  <header class=" text-blue-900 shadow-2xl ">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <!-- <h1 class="text-2xl font-bold">The Spin Bar Laundry</h1> -->
-       <div class="flex items-center space-x-3 px-10">
-        <img src="images/logo.png" alt="Spin Bar Laundry Logo" class="h-12 w-auto">
-        <!-- <h1 class="text-2xl font-bold text-blue-900 font-">The Spin Bar Laundry</h1> -->
-         <h1 class="text-2xl font-bold text-[#334e61]" style="font-family: 'Playfair Display', serif;">
-            The Spin Bar Laundry
-        </h1>
-
-        </div>
-
-      <nav class="space-x-4 px-10">
-        <a href="#services" class="hover:text-white hover:bg-[#334e61] p-2 rounded-md font-semibold">Services</a>
-        <a href="#pricing" class="hover:text-white hover:bg-[#334e61] p-2 rounded-md font-semibold">Pricing</a>
-        <a href="#book" class="hover:text-white hover:bg-[#334e61] p-2 rounded-md font-semibold">Book</a>
-        <a href="#contact" class="hover:text-white hover:bg-[#334e61] p-2 rounded-md font-semibold">Contact</a>
-      </nav>
+<!-- Navbar -->
+<header class="bg-white text-blue-900 shadow-2xl">
+  <div class="container mx-auto flex flex-wrap justify-between items-center p-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="SpinBarLaundry" class="h-12 w-auto">
+      <h1 class="text-xl sm:text-2xl font-bold text-[#334e61]" style="font-family: 'Playfair Display', serif;">
+        The Spin Bar Laundry
+      </h1>
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section class=" text-[#334e61]  py-20 bg-[url('images/hero-bg.png')] bg-cover bg-center h-screen">
-    <h2 class="mx-24 mt-24 text-9xl md:text-8xl font-bold  text-left" style="font-family: 'Playfair Display', serif;">Laundry Services <br/> You Can Trust</h2>
-    <p class=" ml-28 mt-4 text-left text-3xl mb-24">Save Time, Save Energy.</p>
-    <a href="#book" class="text-left ml-48 bg-blue-300 text-[#334e61] font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
+    <!-- Nav Links -->
+    <nav class="w-full md:w-auto flex flex-col md:flex-row items-center md:space-x-4 mt-4 md:mt-0">
+      <a href="#services" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Services</a>
+      <a href="#pricing" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Pricing</a>
+      <a href="#book" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Book</a>
+      <a href="#contact" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="text-[#334e61] py-20 bg-[url('images/hero-bg.png')] bg-cover bg-center min-h-[80vh] flex flex-col justify-center">
+  <div class="px-6 sm:px-12 lg:px-24">
+    <h2 class="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight" style="font-family: 'Playfair Display', serif;">
+      Laundry Services <br/> You Can Trust
+    </h2>
+    <p class="mt-4 text-lg sm:text-2xl">Save Time, Save Energy.</p>
+    <a href="#book" class="mt-6 inline-block bg-blue-300 text-[#334e61] font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
       Book Pickup Now
     </a>
-  </section>
-</div>
+  </div>
+</section>
 
-  <!-- Services -->
-  <section id="services" class="py-16  mx-10">
-    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
-    <div class="grid md:grid-cols-3 gap-8 text-center mb-10">
-      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Wash & Fold</h4>
-        <p>Everyday laundry washed, dried & neatly folded.</p>
-      </div>
-      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Wash & Dry </h4>
-        <p>Professional care for suits, jackets & delicate fabrics.</p>
-      </div>
-      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Stain Removal & Fabric Care</h4>
-        <p>Deep cleaning for carpets, drapes & upholstery covers.</p>
-      </div>
+<!-- Services -->
+<section id="services" class="py-16 px-6 lg:px-20">
+  <h3 class="text-2xl sm:text-3xl font-bold text-center mb-10">Our Services</h3>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Wash & Fold</h4>
+      <p>Everyday laundry washed, dried & neatly folded.</p>
     </div>
-     <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Express Services</h4>
-        <p>Everyday laundry washed, dried & neatly folded.</p>
-      </div>
-      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Pickup & Delivery</h4>
-        <p>Professional care for suits, jackets & delicate fabrics.</p>
-      </div>
-      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Carpets & Curtains</h4>
-        <p>Deep cleaning for carpets, drapes & upholstery covers.</p>
-      </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Wash & Dry</h4>
+      <p>Professional care for suits, jackets & delicate fabrics.</p>
     </div>
-  </section>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Stain Removal & Fabric Care</h4>
+      <p>Deep cleaning for carpets, drapes & upholstery covers.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Express Services</h4>
+      <p>Fast turnaround for urgent needs.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Pickup & Delivery</h4>
+      <p>Convenient laundry collection & delivery.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Carpets & Curtains</h4>
+      <p>Deep cleaning for carpets, drapes & upholstery covers.</p>
+    </div>
+  </div>
+</section>
 
-   <section id="pricing" class="bg-gray-100 py-16 px-36 rounded-lg">
-  <h3 class="text-3xl font-bold text-center mb-10">Pricing</h3>
-  <div class="container mx-auto px-4">
-    <div class="overflow-x-auto">
-      <table class="w-full table-auto border-collapse bg-white shadow rounded-xl">
-        <thead class="bg-[#334e61] text-white">
-          <tr>
-            <th class="px-6 py-3 text-left text-lg font-semibold">Service</th>
-            <th class="px-6 py-3 text-left text-lg font-semibold">Price</th>
-            <th class="px-6 py-3 text-left text-lg font-semibold">Details</th>
-          </tr>
-        </thead>
-        <tbody class="text-gray-700">
-          <tr class="border-b hover:bg-gray-50">
-            <td class="px-6 py-4 font-medium">Regular Laundry - 1 kg</td>
-            <td class="px-6 py-4 font-bold">KES 100</td>
-            <td class="px-6 py-4">Standard washing, drying, and folding</td>
-          </tr>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="px-6 py-4 font-medium">1 Full Laundry Basket</td>
-            <td class="px-6 py-4 font-bold">KES 350</td>
-            <td class="px-6 py-4">Wash and Iron</td>
-          </tr>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="px-6 py-4 font-medium">Duvet</td>
-            <td class="px-6 py-4 font-bold">KES 250</td>
-            <td class="px-6 py-4">Wash & Dry</td>
-          </tr>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="px-6 py-4 font-medium">Curtains & Drapery</td>
-            <td class="px-6 py-4 font-bold">KES 100 per meter</td>
-            <td class="px-6 py-4">Cleaning of window curtains and drapery fabrics</td>
-          </tr>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="px-6 py-4 font-medium">Ironing Services</td>
-            <td class="px-6 py-4 font-bold">KES 50 per item</td>
-            <td class="px-6 py-4">Depends on type & complexity of garment</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="px-6 py-4 font-medium">Pick up & Delivery</td>
-            <td class="px-6 py-4 font-bold text-green-600">Free</td>
-            <td class="px-6 py-4">Convenient service to your doorstep</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<!-- Pricing -->
+<section id="pricing" class="bg-gray-100 py-16 px-6 lg:px-20 rounded-lg">
+  <h3 class="text-2xl sm:text-3xl font-bold text-center mb-10">Pricing</h3>
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse bg-white shadow rounded-xl">
+      <thead class="bg-[#334e61] text-white">
+        <tr>
+          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Service</th>
+          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Price</th>
+          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Details</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-700">
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Regular Laundry - 1 kg</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 100</td>
+          <td class="px-4 sm:px-6 py-4">Standard washing, drying, and folding</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">1 Full Laundry Basket</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 350</td>
+          <td class="px-4 sm:px-6 py-4">Wash and Iron</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Duvet</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 250</td>
+          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Curtains & Drapery</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 100 per meter</td>
+          <td class="px-4 sm:px-6 py-4">Cleaning of window curtains and fabrics</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Ironing Services</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 50 per item</td>
+          <td class="px-4 sm:px-6 py-4">Depends on garment type</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Pick up & Delivery</td>
+          <td class="px-4 sm:px-6 py-4 font-bold text-green-600">Free</td>
+          <td class="px-4 sm:px-6 py-4">To your doorstep</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
