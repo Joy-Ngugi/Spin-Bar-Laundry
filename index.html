@@ -269,6 +269,102 @@ function showError(error) {
     <p id="successMsg" class="text-green-600 text-center mt-6 hidden font-semibold">✅ Booking successful! We'll contact you shortly.</p>
   </section>
 
+  <!-- Feedback Button -->
+<button id="feedback-btn" 
+  class="fixed bottom-20 right-6 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition  ">
+  💬 Give Feedback
+</button>
+
+<!-- Feedback Form (Hidden by default) -->
+<div id="feedback-form" 
+  class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl p-6 w-96 shadow-xl relative">
+    
+    <!-- Close Button -->
+    <button id="close-form" 
+      class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg">
+      ✖
+    </button>
+    
+    <h2 class="text-xl font-bold text-[#334e61] mb-4">We Value Your Feedback</h2>
+    
+    <form id="formFeedback" class="space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+        <input type="text" id="fbname" name="name" 
+          class="w-full mt-1 p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" 
+          required>
+      </div>
+      
+      <div>
+        <label for="feedback" class="block text-sm font-medium text-gray-700">Feedback</label>
+        <textarea id="feedback" name="feedback" rows="3" 
+          class="w-full mt-1 p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" 
+          required></textarea>
+      </div>
+      
+      <button type="submit" 
+        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        Submit
+      </button>
+    </form>
+    
+    <!-- Success Message -->
+    <p id="feedback-success" class="hidden text-green-600 mt-3 font-semibold">✅ Thank you for your feedback!</p>
+  </div>
+</div>
+
+<script>
+  const feedbackBtn = document.getElementById("feedback-btn");
+  const feedbackForm = document.getElementById("feedback-form");
+  const closeForm = document.getElementById("close-form");
+  const formFeedback = document.getElementById("formFeedback");
+  const feedbackSuccess = document.getElementById("feedback-success");
+
+  // Open form
+  feedbackBtn.addEventListener("click", () => {
+    feedbackForm.classList.remove("hidden");
+  });
+
+  // Close form
+  closeForm.addEventListener("click", () => {
+    feedbackForm.classList.add("hidden");
+  });
+
+  // Submit form
+    formFeedback.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const fbname = document.getElementById("fbname").value.trim();
+    const feedback = document.getElementById("feedback").value.trim();
+
+    if (fbname && feedback) {
+      const fbmessage = `📢 New Feedback!\n\n👤 Name: ${fbname}\n💬 Feedback: ${feedback}`;
+      const url = `https://wa.me/254717575299?text=${encodeURIComponent(fbmessage)}`;
+      
+      // Open WhatsApp with message
+      window.open(url, "_blank");
+
+      
+    feedbackSuccess.classList.remove("hidden");
+
+    setTimeout(() => {
+      feedbackForm.classList.add("hidden");
+      feedbackSuccess.classList.add("hidden");
+      formFeedback.reset();
+    }, 2000);
+  
+
+      // Show success message
+      document.getElementById("feedback-success").classList.remove("hidden");
+      this.reset();
+    } else {
+      alert("Fill in all fields before submitting.");
+    }
+  });
+</script>
+
+
   <!-- Contact -->
   <section id="contact" class="bg-gray-100 py-16">
     <h3 class="text-3xl font-bold text-center mb-10">Contact Us</h3>
@@ -278,6 +374,7 @@ function showError(error) {
       <p>📧 Email: <a href="mailto:info@freshspin.com" class="text-blue-600">spinbarlaundryservices@gmail.com</a></p>
     </div>
   </section>
+  
 
   <!-- Footer -->
   <footer class="bg-[#334e61] text-white text-center py-6">
@@ -309,44 +406,7 @@ function showError(error) {
       }
     });
   </script>
-  <!-- <script>
-  document.getElementById("bookingForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const service = document.getElementById("service").value;
-    const date = document.getElementById("date").value;
-    const location = document.getElementById("location").value.trim();
-
-    if (!name || !phone || !service || !date || !location) {
-      alert("⚠️ Please fill in all fields before submitting.");
-      return;
-    }
-
-    const payload = { name, phone, service, date, location };
-
-    try {
-      const res = await fetch("/api/sendBooking", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
-
-      const data = await res.json();
-      if (res.ok && data.success) {
-        document.getElementById("successMsg")?.classList.remove("hidden");
-        this.reset();
-      } else {
-        console.error(data);
-        alert("❌ Failed to send booking to WhatsApp.");
-      }
-    } catch (err) {
-      console.error(err);
-      alert("❌ Network error. Please try again.");
-    }
-  });
-</script> -->
 
 </body>
 </html>
