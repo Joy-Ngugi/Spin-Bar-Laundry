@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry Tips & Fabric Care | Spin Bar Blog</title>
+  <meta name="description" content="Laundry care tips, fabric cleaning guides, and professional laundry advice from Spin Bar Laundry.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header class="bg-white text-blue-900 shadow-2xl bg-white shadow-lg fixed top-0 left-0 w-full z-50 pl-10">
+  <div class="container mx-auto flex justify-between items-center w-full p-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="" class="h-12 w-auto">
+      <h1 class="text-xl sm:text-2xl font-bold text-[#334e61]  md:text-2xl" style="font-family: 'Playfair Display', serif;">
+        The Spin Bar Laundry
+      </h1>
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-btn" class="block md:hidden text-[#334e61] focus:outline-none">
+      <!-- Icon -->
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+   
+    <nav id="menu" class="hidden md:flex flex-row items-center space-x-4 mt-4 md:mt-0">
+    
+       <a href="home.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+    Home
+      </a>
+      <a href="about.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+        About
+      </a>
+       
+      <a href="blog.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+        Blogs
+      </a>
+       
+      <a href="contact.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Contact Us</a>
+         
+      <a href="privacy&terms.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+        Policies
+        
+      </a>
+      
+     
+     
+    </nav>
+
+<div id="mobile-menu" class="hidden absolute top-full right-0 w-40 bg-[#334e61] z-40 flex flex-col items-start p-2 space-y-2">
+  <a href="home.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Home</a>
+  <a href="about.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">About</a>
+  <a href="blog.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Blogs</a>
+  <a href="contact.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Contact</a>
+  <a href="privacy&terms.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Policies</a>
+</div>
+
+
+</header>
+
+<script>
+  // Toggle Menu Script
+  const btn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+   
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+<body class="bg-gray-50 text-gray-800 pt-20">
+
+<main class="pt-24 max-w-5xl mx-auto px-6 py-16">
+
+  <h1 class="text-4xl font-bold mb-8 text-[#334e61]">
+    Laundry Tips & Fabric Care
+  </h1>
+
+  <ul class="space-y-6 text-lg">
+    <li>
+      <a href="blog/fabric-care.html" class="text-blue-600 font-semibold hover:underline">
+        How to Properly Wash and Care for Different Fabrics
+      </a>
+    </li>
+    <li>
+      <a href="blog/laundry-mistakes.html" class="text-blue-600 font-semibold hover:underline">
+        Common Laundry Mistakes That Ruin Clothes
+      </a>
+    </li>
+    <li>
+      <a href="blog/washing-frequency.html" class="text-blue-600 font-semibold hover:underline">
+        How Often Should You Wash Jeans, Jackets, and Towels?
+      </a>
+    </li>
+    <li>
+      <a href="blog/professional-benefits.html" class="text-blue-600 font-semibold hover:underline">
+        Benefits of Professional Laundry Services
+      </a>
+    </li>
+    <li>
+      <a href="blog/eco-friendly.html" class="text-blue-600 font-semibold hover:underline">
+        Eco-Friendly Laundry Tips for Kenyan Homes
+      </a>
+    </li>
+  </ul>
+
+</main>
+
+<footer class="bg-[#334e61] text-white text-center py-6 fixed bottom-0 left-0 w-full">
+    <p>&copy; 2026 Spin Bar Laundry. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
