@@ -10,15 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8609923367194725"
      crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-<header class="bg-white text-blue-900 shadow-2xl bg-white shadow-lg fixed top-0 left-0 w-full z-50 pl-10">
-  <div class="container mx-auto flex justify-between items-center w-full p-4">
+<body class="bg-gray-50 text-gray-800">
+
+
+
+<header class="bg-white text-blue-900 shadow-2xl">
+  <div class="container mx-auto flex justify-between items-center p-4">
     <!-- Logo -->
     <div class="flex items-center space-x-3">
       <img src="images/logo.png" alt="" class="h-12 w-auto">
-      <h1 class="text-xl sm:text-2xl font-bold text-[#334e61]  md:text-2xl" style="font-family: 'Playfair Display', serif;">
+      <h1 class="text-xl sm:text-2xl font-bold text-[#334e61]" style="font-family: 'Playfair Display', serif;">
         The Spin Bar Laundry
       </h1>
     </div>
@@ -35,8 +37,10 @@
 
    
     <nav id="menu" class="hidden md:flex flex-row items-center space-x-4 mt-4 md:mt-0">
-    
        <a href="index.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+    Home
+      </a>
+       <a href="home.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
     Home
       </a>
       <a href="about.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
@@ -44,45 +48,146 @@
       </a>
        
       <a href="blog.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
-        Blogs
+        Blog
       </a>
-       
-      <a href="contact.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Contact Us</a>
-         
-      <a href="privacy&terms.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
-        Policies
+       <a href="privacy&terms.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+        privacy
         
       </a>
+      <a href="contact.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Contact</a>
+         
+     
       
      
      
     </nav>
 
-<div id="mobile-menu" class="hidden absolute top-full right-0 w-40 bg-[#334e61] z-40 flex flex-col items-start p-2 space-y-2">
-  <a href="home.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Home</a>
-  <a href="about.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">About</a>
-  <a href="blog.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Blogs</a>
-  <a href="contact.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Contact</a>
-  <a href="privacy&terms.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Policies</a>
-</div>
-
-
+  </div>
 </header>
 
 <script>
   // Toggle Menu Script
   const btn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+  const menu = document.getElementById("menu");
 
   btn.addEventListener("click", () => {
-   
-    mobileMenu.classList.toggle("hidden");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle('flex');
   });
 </script>
 
-<body class="bg-gray-50 text-gray-800 pt-20">
-    <section id="book" class="py-16 container mx-auto">
-    <h3 class="text-center text-4xl font-bold text-[#334e61] mb-4">Book a Pickup</h3>
+
+<!-- Hero -->
+<section class="text-[#334e61] py-20 bg-[url('Images/hero-bg.png')] bg-cover bg-center min-h-[80vh] flex flex-col justify-center">
+  <div class="px-6 sm:px-12 lg:px-24">
+    <h2 class="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight" style="font-family: 'Playfair Display', serif;">
+      Laundry Services <br/> You Can Trust
+    </h2>
+    <p class="mt-4 text-lg sm:text-2xl">Save Time, Save Energy.</p>
+    <a href="#book" class="mt-6 inline-block bg-blue-300 text-[#334e61] font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
+      Book Pickup Now
+    </a>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-16 px-6 lg:px-20">
+  <h3 class="text-2xl sm:text-3xl font-bold text-center mb-10">Our Services</h3>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Wash & Fold</h4>
+      <p>Everyday laundry washed, dried & neatly folded.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Wash & Dry</h4>
+      <p>Professional care for jackets & delicate fabrics.</p>
+    </div>
+    
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Express Services</h4>
+      <p>Fast turnaround for urgent needs.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Pickup & Delivery</h4>
+      <p>Convenient laundry collection & delivery.</p>
+    </div>
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Curtains</h4>
+      <p>Deep cleaning for drapes & upholstery covers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="bg-gray-100 py-16 px-6 lg:px-20 rounded-lg">
+  <h3 class="text-2xl sm:text-3xl font-bold text-center mb-10">Pricing</h3>
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto border-collapse bg-white shadow rounded-xl">
+      <thead class="bg-[#334e61] text-white">
+        <tr>
+          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Service</th>
+          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Price</th>
+          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Details</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-700">
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Regular Laundry - 1 kg</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 80</td>
+          <td class="px-4 sm:px-6 py-4">Standard washing, drying, and folding</td>
+        </tr>
+      
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Duvet / Blankets</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 350</td>
+          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
+        </tr>
+       
+       
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Duvet (6 by 6)</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 400</td>
+          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
+        </tr>
+         <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Aprons</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 50</td>
+          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Curtains </td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 100 per piece</td>
+          <td class="px-4 sm:px-6 py-4">Cleaning of window curtains and fabrics</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Jackets / Sweaters</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 100 per piece</td>
+          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Any Other Single Item</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 50 per piece</td>
+          <td class="px-4 sm:px-6 py-4">Any Other Piece of Cloth</td>
+        </tr>
+        <tr class="border-b hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Ironing Services</td>
+          <td class="px-4 sm:px-6 py-4 font-bold">KES 50 per item</td>
+          <td class="px-4 sm:px-6 py-4">Depends on garment type</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="px-4 sm:px-6 py-4 font-medium">Pick up & Delivery</td>
+          <td class="px-4 sm:px-6 py-4 font-bold text-green-600">Free within Limuru Town</td>
+          <td class="px-4 sm:px-6 py-4">To your doorstep</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+  <!-- Booking Form -->
+  <section id="book" class="py-16 container mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10">Book a Pickup</h3>
     <form id="bookingForm" class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow space-y-6">
       <div>
         <label class="block font-semibold mb-2">Full Name</label>
@@ -91,10 +196,6 @@
       <div>
         <label class="block font-semibold mb-2">Phone Number</label>
         <input type="tel" id="phone" class="w-full border p-3 rounded" required>
-      </div>
-      <div>
-        <label class="block font-semibold mb-2">Apartment Name</label>
-        <input type="text" id="apartment" class="w-full border p-3 rounded" >
       </div>
       <div>
         <label class="block font-semibold mb-2">Service</label>
@@ -111,13 +212,7 @@
         <label class="block font-semibold mb-2">Pickup Date</label>
         <input type="date" id="date" class="w-full border p-3 rounded" required>
       </div>
-      <script>
-  
-  const dateInput = document.getElementById("date");
-  const today = new Date().toISOString().split("T")[0];
-  dateInput.min = today;
-</script>
-    
+     
       <div class="mb-4">
   <label for="location" class="block text-sm font-medium text-gray-700">
     📍 Your Location
@@ -181,7 +276,8 @@ function showError(error) {
     <p id="successMsg" class="text-green-600 text-center mt-6 hidden font-semibold">✅ Booking successful! We'll contact you shortly.</p>
   </section>
 
-  <button id="feedback-btn" 
+  <!-- Feedback Button -->
+<button id="feedback-btn" 
   class="fixed bottom-20 right-6 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition  ">
   💬 Give Feedback
 </button>
@@ -281,35 +377,16 @@ function showError(error) {
     <h3 class="text-3xl font-bold text-center mb-10">Contact Us</h3>
     <div class="text-center space-y-4">
       <p>📍 Location:Gikonyo House Limuru, Kenya</p>
-      <p>📞 Phone: <a href="tel:+254717575299" class="text-blue-600">+254 717575299</a></p>
-     <p>
-  📧 Email:
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=spinbarlaundryservices@gmail.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="text-blue-600 underline hover:text-blue-800">
-    spinbarlaundryservices@gmail.com
-  </a>
-</p>
-
-      <p><i class="fa-brands fa-whatsapp"></i>
-  WhatsApp:
-  <a href="https://wa.me/254717575299"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="text-blue-600 underline hover:text-blue-800">
-     
-    Chat on WhatsApp
-  </a>
-</p>
-      <p><i class="fa-brands fa-tiktok"></i> Tiktok: <a href="https://www.tiktok.com/@spinbar.laundry?_r=1&_t=ZS-93QLd6gHja4" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800" class="text-blue-600"> https://www.tiktok.com/@spinbar.laundry</a></p>
+      <p>📞 Phone: <a href="tel:+254700123456" class="text-blue-600">+254 717575299</a></p>
+      <p>📧 Email: <a href="mailto:info@freshspin.com" class="text-blue-600">spinbarlaundryservices@gmail.com</a></p>
+      <p>📧 Tiktok: <a href="spinbarlaundryservices" class="text-blue-600">https://www.tiktok.com/@spinbar.laundry?_r=1&_t=ZS-93QLd6gHja4</a></p>
     </div>
   </section>
   
 
   <!-- Footer -->
   <footer class="bg-[#334e61] text-white text-center py-6">
-    <p>&copy; 2026 Spin Bar Laundry. All Rights Reserved.</p>
+    <p>&copy; 2025 Spin Bar Laundry. All Rights Reserved.</p>
   </footer>
 
   
@@ -319,18 +396,17 @@ function showError(error) {
       
       const name = document.getElementById("name").value.trim();
       const phone = document.getElementById("phone").value.trim();
-      const apartment = document.getElementById("apartment").value.trim();
       const service = document.getElementById("service").value;
       const date = document.getElementById("date").value;
       const location = document.getElementById("location").value.trim();
 
-      const message = `📦 New Booking!\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🏠 Apartment: ${apartment}\n🛠 Service: ${service}\n📅 Date: ${date}\n📍 Location: ${location}`;
+      const message = `📦 New Booking!\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🛠 Service: ${service}\n📅 Date: ${date}\n📍 Location: ${location}`;
 
- 
+  // Replace 2547XXXXXXXX with your WhatsApp number
     const url = `https://wa.me/254717575299?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
       
-      if (name && phone && apartment && service && date && location) {
+      if (name && phone && service && date && location) {
         document.getElementById("successMsg").classList.remove("hidden");
         this.reset();
       } else {
@@ -338,5 +414,8 @@ function showError(error) {
       }
     });
   </script>
+
+
 </body>
 </html>
+

@@ -11,16 +11,16 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8609923367194725"
      crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
 
 
 
-<header class="bg-white text-blue-900 shadow-2xl">
-  <div class="container mx-auto flex justify-between items-center p-4">
+
+<header class="bg-white text-blue-900 shadow-2xl bg-white shadow-lg fixed top-0 left-0 w-full z-50 pl-10">
+  <div class="container mx-auto flex justify-between items-center w-full p-4">
     <!-- Logo -->
     <div class="flex items-center space-x-3">
       <img src="images/logo.png" alt="" class="h-12 w-auto">
-      <h1 class="text-xl sm:text-2xl font-bold text-[#334e61]" style="font-family: 'Playfair Display', serif;">
+      <h1 class="text-xl sm:text-2xl font-bold text-[#334e61]  md:text-2xl" style="font-family: 'Playfair Display', serif;">
         The Spin Bar Laundry
       </h1>
     </div>
@@ -37,10 +37,8 @@
 
    
     <nav id="menu" class="hidden md:flex flex-row items-center space-x-4 mt-4 md:mt-0">
+    
        <a href="index.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
-    Home
-      </a>
-       <a href="home.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
     Home
       </a>
       <a href="about.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
@@ -48,374 +46,234 @@
       </a>
        
       <a href="blog.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
-        Blog
+        Blogs
       </a>
-       <a href="privacy&terms.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
-        privacy
+       
+      <a href="contact.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Contact Us</a>
+         
+      <a href="privacy&terms.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">
+        Policies
         
       </a>
-      <a href="contact.html" class="hover:text-white hover:bg-[#334e61] px-3 py-2 rounded-md font-semibold">Contact</a>
-         
-     
       
      
      
     </nav>
 
-  </div>
+<div id="mobile-menu" class="hidden absolute top-full right-0 w-40 bg-[#334e61] z-40 flex flex-col items-start p-2 space-y-2">
+  <a href="home.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Home</a>
+  <a href="about.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">About</a>
+  <a href="blog.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Blogs</a>
+  <a href="contact.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Contact</a>
+  <a href="privacy&terms.html" class="w-full text-left text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-400">Policies</a>
+</div>
+
+
 </header>
 
 <script>
   // Toggle Menu Script
   const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("menu");
+  const mobileMenu = document.getElementById("mobile-menu");
 
   btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle('flex');
+   
+    mobileMenu.classList.toggle("hidden");
   });
 </script>
 
-
+<body class="bg-gray-50 text-gray-800 pt-20">
 <!-- Hero -->
-<section class="text-[#334e61] py-20 bg-[url('Images/hero-bg.png')] bg-cover bg-center min-h-[80vh] flex flex-col justify-center">
+<section class="text-[#334e61] py-20 bg-[url('Images/hero-bg.png')] bg-cover bg-center min-h-[80vh] flex flex-col justify-center ">
   <div class="px-6 sm:px-12 lg:px-24">
     <h2 class="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight" style="font-family: 'Playfair Display', serif;">
       Laundry Services <br/> You Can Trust
     </h2>
     <p class="mt-4 text-lg sm:text-2xl">Save Time, Save Energy.</p>
-    <a href="#book" class="mt-6 inline-block bg-blue-300 text-[#334e61] font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
+    <a href="contact.html" class="mt-6 inline-block bg-blue-300 text-[#334e61] font-bold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
       Book Pickup Now
     </a>
   </div>
 </section>
 
-<!-- Services -->
-<section id="services" class="py-16 px-6 lg:px-20">
-  <h3 class="text-2xl sm:text-3xl font-bold text-center mb-10">Our Services</h3>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-      <h4 class="text-xl font-semibold mb-2">Wash & Fold</h4>
-      <p>Everyday laundry washed, dried & neatly folded.</p>
-    </div>
-    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-      <h4 class="text-xl font-semibold mb-2">Wash & Dry</h4>
-      <p>Professional care for jackets & delicate fabrics.</p>
-    </div>
-    
-    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-      <h4 class="text-xl font-semibold mb-2">Express Services</h4>
-      <p>Fast turnaround for urgent needs.</p>
-    </div>
-    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-      <h4 class="text-xl font-semibold mb-2">Pickup & Delivery</h4>
-      <p>Convenient laundry collection & delivery.</p>
-    </div>
-    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-      <h4 class="text-xl font-semibold mb-2">Curtains</h4>
-      <p>Deep cleaning for drapes & upholstery covers.</p>
-    </div>
-  </div>
-</section>
+<main class="pt-10">
 
-<!-- Pricing -->
-<section id="pricing" class="bg-gray-100 py-16 px-6 lg:px-20 rounded-lg">
-  <h3 class="text-2xl sm:text-3xl font-bold text-center mb-10">Pricing</h3>
-  <div class="overflow-x-auto">
-    <table class="w-full table-auto border-collapse bg-white shadow rounded-xl">
-      <thead class="bg-[#334e61] text-white">
-        <tr>
-          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Service</th>
-          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Price</th>
-          <th class="px-4 sm:px-6 py-3 text-left text-base sm:text-lg font-semibold">Details</th>
-        </tr>
-      </thead>
-      <tbody class="text-gray-700">
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Regular Laundry - 1 kg</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 80</td>
-          <td class="px-4 sm:px-6 py-4">Standard washing, drying, and folding</td>
-        </tr>
-      
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Duvet / Blankets</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 350</td>
-          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
-        </tr>
-       
-       
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Duvet (6 by 6)</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 400</td>
-          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
-        </tr>
-         <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Aprons</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 50</td>
-          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
-        </tr>
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Curtains </td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 100 per piece</td>
-          <td class="px-4 sm:px-6 py-4">Cleaning of window curtains and fabrics</td>
-        </tr>
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Jackets / Sweaters</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 100 per piece</td>
-          <td class="px-4 sm:px-6 py-4">Wash & Dry</td>
-        </tr>
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Any Other Single Item</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 50 per piece</td>
-          <td class="px-4 sm:px-6 py-4">Any Other Piece of Cloth</td>
-        </tr>
-        <tr class="border-b hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Ironing Services</td>
-          <td class="px-4 sm:px-6 py-4 font-bold">KES 50 per item</td>
-          <td class="px-4 sm:px-6 py-4">Depends on garment type</td>
-        </tr>
-        <tr class="hover:bg-gray-50">
-          <td class="px-4 sm:px-6 py-4 font-medium">Pick up & Delivery</td>
-          <td class="px-4 sm:px-6 py-4 font-bold text-green-600">Free within Limuru Town</td>
-          <td class="px-4 sm:px-6 py-4">To your doorstep</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+  <!-- INTRO SECTION -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold mb-6 text-[#334e61]">
+      Professional Laundry Services You Can Rely On
+    </h2>
 
+    <p class="mb-4">
+      Spin Bar Laundry is a professional laundry service based in Limuru, Kenya, dedicated to providing
+      reliable, hygienic, and convenient garment care solutions for individuals, families, and small businesses.
+      We understand that laundry is an essential part of daily life, yet it often consumes valuable time and energy.
+      Our mission is to simplify this process by offering dependable services that allow our customers to focus on
+      what truly matters.
+    </p>
 
-  <!-- Booking Form -->
-  <section id="book" class="py-16 container mx-auto">
-    <h3 class="text-3xl font-bold text-center mb-10">Book a Pickup</h3>
-    <form id="bookingForm" class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow space-y-6">
-      <div>
-        <label class="block font-semibold mb-2">Full Name</label>
-        <input type="text" id="name" class="w-full border p-3 rounded" required>
-      </div>
-      <div>
-        <label class="block font-semibold mb-2">Phone Number</label>
-        <input type="tel" id="phone" class="w-full border p-3 rounded" required>
-      </div>
-      <div>
-        <label class="block font-semibold mb-2">Service</label>
-        <select id="service" class="w-full border p-3 rounded" required>
-          <option value="">Select a service</option>
-          <option>Wash & Fold</option>
-          <option>Wash & Iron</option>
-          <!-- <option>Dry Cleaning</option> -->
-          <option>Curtains</option>
-          <option>Bedding</option>
-        </select>
-      </div>
-      <div>
-        <label class="block font-semibold mb-2">Pickup Date</label>
-        <input type="date" id="date" class="w-full border p-3 rounded" required>
-      </div>
-     
-      <div class="mb-4">
-  <label for="location" class="block text-sm font-medium text-gray-700">
-    📍 Your Location
-  </label>
+    <p class="mb-4">
+      Whether you are managing a busy work schedule, running a household, or operating a business that requires
+      consistent laundry care, Spin Bar Laundry provides a practical solution. Our services are designed to maintain
+      fabric quality, remove stubborn stains, and ensure that every item is returned clean, fresh, and neatly handled.
+      We combine modern laundry practices with attention to detail to deliver results you can trust.
+    </p>
 
-  <!-- Hidden input to store location -->
-  <input type="text" id="location" name="location" readonly
-    class="mt-1 block w-full p-2 border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-    placeholder="Click the button to share your location" />
-
-  <!-- Button to trigger location -->
-  <button type="button" onclick="getLocation()"
-    class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
-    Share My Location
-  </button>
-</div>
-
-<script>
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
-  } else {
-    alert("Geolocation is not supported by this browser.");
-  }
-}
-
-function showPosition(position) {
-  // Convert to Google Maps link like Uber/Bolt
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let googleMapsLink = `https://www.google.com/maps?q=${lat},${lon}`;
-
-  // Put the link in the hidden input field
-  document.getElementById("location").value = googleMapsLink;
-
-  alert("✅ Location captured successfully!");
-}
-
-function showError(error) {
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-      alert("❌ User denied the request for Geolocation.");
-      break;
-    case error.POSITION_UNAVAILABLE:
-      alert("⚠️ Location information is unavailable.");
-      break;
-    case error.TIMEOUT:
-      alert("⏳ The request to get user location timed out.");
-      break;
-    case error.UNKNOWN_ERROR:
-      alert("❌ An unknown error occurred.");
-      break;
-  }
-}
-</script>
-
-      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
-        Submit Booking
-      </button>
-    </form>
-    <p id="successMsg" class="text-green-600 text-center mt-6 hidden font-semibold">✅ Booking successful! We'll contact you shortly.</p>
+    <p>
+      With convenient pickup and delivery options and a customer-focused approach, Spin Bar Laundry continues to
+      support the Limuru community by making professional laundry care accessible and affordable.
+    </p>
   </section>
 
-  <!-- Feedback Button -->
-<button id="feedback-btn" 
-  class="fixed bottom-20 right-6 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition  ">
-  💬 Give Feedback
-</button>
+  <!-- SERVICES EXPLAINED -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-[#334e61]">
+        Our Laundry Services
+      </h2>
 
-<!-- Feedback Form (Hidden by default) -->
-<div id="feedback-form" 
-  class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
-  <div class="bg-white rounded-xl p-6 w-96 shadow-xl relative">
-    
-    <!-- Close Button -->
-    <button id="close-form" 
-      class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg">
-      ✖
-    </button>
-    
-    <h2 class="text-xl font-bold text-[#334e61] mb-4">We Value Your Feedback</h2>
-    
-    <form id="formFeedback" class="space-y-4">
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-        <input type="text" id="fbname" name="name" 
-          class="w-full mt-1 p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" 
-          required>
-      </div>
-      
-      <div>
-        <label for="feedback" class="block text-sm font-medium text-gray-700">Feedback</label>
-        <textarea id="feedback" name="feedback" rows="3" 
-          class="w-full mt-1 p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" 
-          required></textarea>
-      </div>
-      
-      <button type="submit" 
-        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-        Submit
-      </button>
-    </form>
-    
-    <!-- Success Message -->
-    <p id="feedback-success" class="hidden text-green-600 mt-3 font-semibold">✅ Thank you for your feedback!</p>
-  </div>
-</div>
+      <p class="mb-6">
+        At Spin Bar Laundry, we offer a wide range of laundry services tailored to meet different fabric types,
+        garment needs, and customer preferences. Each service is handled with care, using appropriate washing
+        techniques and detergents to preserve fabric quality and hygiene.
+      </p>
 
-<script>
-  const feedbackBtn = document.getElementById("feedback-btn");
-  const feedbackForm = document.getElementById("feedback-form");
-  const closeForm = document.getElementById("close-form");
-  const formFeedback = document.getElementById("formFeedback");
-  const feedbackSuccess = document.getElementById("feedback-success");
+      <p class="mb-4">
+        Our wash and fold service is ideal for everyday clothing, ensuring items are thoroughly cleaned, dried,
+        and neatly folded for convenience. For heavier or delicate items such as jackets, sweaters, duvets,
+        and curtains, we apply specialized washing and drying methods that prevent damage and maintain texture.
+      </p>
 
-  // Open form
-  feedbackBtn.addEventListener("click", () => {
-    feedbackForm.classList.remove("hidden");
-  });
+      <p class="mb-4">
+        We also provide express laundry services for customers who require fast turnaround times without
+        compromising on quality. Our ironing services help ensure garments are presentable, wrinkle-free,
+        and ready for use.
+      </p>
 
-  // Close form
-  closeForm.addEventListener("click", () => {
-    feedbackForm.classList.add("hidden");
-  });
-
-  // Submit form
-    formFeedback.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const fbname = document.getElementById("fbname").value.trim();
-    const feedback = document.getElementById("feedback").value.trim();
-
-    if (fbname && feedback) {
-      const fbmessage = `📢 New Feedback!\n\n👤 Name: ${fbname}\n💬 Feedback: ${feedback}`;
-      const url = `https://wa.me/254717575299?text=${encodeURIComponent(fbmessage)}`;
-      
-      // Open WhatsApp with message
-      window.open(url, "_blank");
-
-      
-    feedbackSuccess.classList.remove("hidden");
-
-    setTimeout(() => {
-      feedbackForm.classList.add("hidden");
-      feedbackSuccess.classList.add("hidden");
-      formFeedback.reset();
-    }, 2000);
-  
-
-      // Show success message
-      document.getElementById("feedback-success").classList.remove("hidden");
-      this.reset();
-    } else {
-      alert("Fill in all fields before submitting.");
-    }
-  });
-</script>
-
-
-  <!-- Contact -->
-  <section id="contact" class="bg-gray-100 py-16">
-    <h3 class="text-3xl font-bold text-center mb-10">Contact Us</h3>
-    <div class="text-center space-y-4">
-      <p>📍 Location:Gikonyo House Limuru, Kenya</p>
-      <p>📞 Phone: <a href="tel:+254700123456" class="text-blue-600">+254 717575299</a></p>
-      <p>📧 Email: <a href="mailto:info@freshspin.com" class="text-blue-600">spinbarlaundryservices@gmail.com</a></p>
-      <p>📧 Tiktok: <a href="spinbarlaundryservices" class="text-blue-600">https://www.tiktok.com/@spinbar.laundry?_r=1&_t=ZS-93QLd6gHja4</a></p>
+      <p>
+        To enhance convenience, we offer pickup and delivery services within Limuru town, allowing customers
+        to access professional laundry care without leaving their homes or workplaces.
+      </p>
     </div>
   </section>
-  
 
-  <!-- Footer -->
-  <footer class="bg-[#334e61] text-white text-center py-6">
-    <p>&copy; 2025 Spin Bar Laundry. All Rights Reserved.</p>
+  <!-- WHY CHOOSE US -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-[#334e61]">
+      Why Choose Spin Bar Laundry?
+    </h2>
+
+    <p class="mb-6">
+      Choosing the right laundry service is essential for maintaining the longevity and cleanliness of your
+      garments. Spin Bar Laundry stands out by prioritizing quality, reliability, and customer satisfaction.
+    </p>
+
+    <ul class="list-disc pl-6 space-y-3">
+      <li>
+        <strong>Professional Fabric Care:</strong> Each garment is treated according to its fabric type to
+        prevent shrinkage, fading, or damage.
+      </li>
+      <li>
+        <strong>Convenient Pickup and Delivery:</strong> We save you time by collecting and returning laundry
+        within Limuru town.
+      </li>
+      <li>
+        <strong>Affordable Pricing:</strong> Transparent pricing ensures customers receive value for money
+        without hidden costs.
+      </li>
+      <li>
+        <strong>Hygiene and Cleanliness:</strong> We maintain high hygiene standards throughout the laundry process.
+      </li>
+      <li>
+        <strong>Customer-Focused Service:</strong> We listen to customer needs and adapt our services accordingly.
+      </li>
+    </ul>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-[#334e61]">
+        Our Service Area
+      </h2>
+
+      <p class="mb-4">
+        Spin Bar Laundry primarily serves customers within Limuru town and its surrounding areas.
+        Our pickup and delivery services are designed to provide easy access to professional laundry
+        care for residents, businesses, and institutions in the region.
+      </p>
+
+      <p>
+        As our services continue to grow, we aim to expand our coverage to nearby towns and areas
+        to meet increasing demand for reliable and convenient laundry solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-8 text-[#334e61]">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      <div>
+        <h3 class="font-semibold text-lg">
+          How long does laundry take to be completed?
+        </h3>
+        <p>
+          Standard laundry services are typically completed within 24 to 48 hours.
+          Express services are available for urgent needs.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">
+          Do you offer pickup and delivery services?
+        </h3>
+        <p>
+          Yes. We provide pickup and delivery services within Limuru town to ensure convenience
+          for our customers.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">
+          How do you handle delicate fabrics?
+        </h3>
+        <p>
+          Delicate fabrics are washed using gentle cycles and appropriate detergents to prevent damage
+          and maintain fabric integrity.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">
+          Is my laundry mixed with other customers’ items?
+        </h3>
+        <p>
+          No. Laundry is handled separately to maintain hygiene and prevent color transfer.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">
+          How can I book a service?
+        </h3>
+        <p>
+          Customers can book a service directly through our website booking form or contact us
+          via phone or WhatsApp.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+   <footer class="bg-[#334e61] text-white text-center py-6">
+    <p>&copy; 2026 Spin Bar Laundry. All Rights Reserved.</p>
   </footer>
 
-  
-  <script>
-    document.getElementById("bookingForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const service = document.getElementById("service").value;
-      const date = document.getElementById("date").value;
-      const location = document.getElementById("location").value.trim();
-
-      const message = `📦 New Booking!\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n🛠 Service: ${service}\n📅 Date: ${date}\n📍 Location: ${location}`;
-
-  // Replace 2547XXXXXXXX with your WhatsApp number
-    const url = `https://wa.me/254717575299?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-      
-      if (name && phone && service && date && location) {
-        document.getElementById("successMsg").classList.remove("hidden");
-        this.reset();
-      } else {
-        alert("⚠️ Please fill in all fields before submitting.");
-      }
-    });
-  </script>
-
-
-</body>
+  </body>
 </html>
-
